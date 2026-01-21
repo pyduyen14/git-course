@@ -1,0 +1,82 @@
+BÀI TẬP GIT 02
+1.
+- git commit --amend: mở nơi để sửa lại message của commit
+- git commit --amend -m"<message>": sửa nội dung message của commit trực tiếp
+- git restore --staged <file>: đưa lại file đang ở vùng staging về vùng working directory
+- git reset HEAD~1: đưa các file ở commit gần nhất về lại vùng working directory
+
+2.
+a. Tạo 3 file: file1, file2, file3
+Vùng working: ko 
+vùng staging: ko
+vùng repository: ko
+
+b. Chạy lệnh: git init
+Vùng working: file1, file2, file3 
+vùng staging: ko
+vùng repository: ko
+
+c. Chạy lệnh: git commit -m”init project”
+Vùng working: file1, file2, file3 
+vùng staging: ko
+vùng repository: ko
+
+d. Chạy lệnh: git add file1
+Vùng working: file2, file3 
+vùng staging: file1
+vùng repository: ko
+
+e. Chạy lệnh: git commit -m”add file”
+Vùng working: file2, file3 
+vùng staging: ko
+vùng repository: file1
+
+f. Chạy lệnh: git add .
+Vùng working: ko 
+vùng staging: file2, file3 
+vùng repository: file1
+
+g. Chạy lệnh: git restore --staged file2
+Vùng working: file2 
+vùng staging: file3 
+vùng repository: file1
+
+h. Chạy lệnh: git commit -m”add all files”
+Vùng working: file2
+vùng staging: ko
+vùng repository: file1, file3 
+
+i. Chạy lệnh: git reset HEAD~1
+Vùng working: file2, file3 
+vùng staging: ko
+vùng repository: file1
+
+
+3. lesson-3-git
+a. Chạy lệnh git init
+Vùng working: ko
+vùng staging: ko
+vùng repository: ko
+
+b. Tạo file file1.txt, file2.txt, oops/file3.txt.
+Vùng working: file1.txt, file2.txt, oops/file3.txt
+vùng staging: ko
+vùng repository: ko
+
+c. Thêm file .gitignore, thêm vào 2 dòng:
+    i. file1.txt
+    ii. oops/
+Vùng working: file1.txt, file2.txt, oops/file3.txt
+vùng staging: ko
+vùng repository: ko
+
+d. Chạy lệnh: git add .
+Vùng working: file1.txt, oops/file3.txt
+vùng staging: file2.txt
+vùng repository: ko
+
+e. Chạy lệnh: git commit -m"init project"
+Vùng working: file1.txt, oops/file3.txt
+vùng staging: ko 
+vùng repository:file2.txt
+
