@@ -1,10 +1,10 @@
 1.
-- git init: khoi tao 1 repo 
-- git add <file_name>: dua mot file cu the o vung working directory vao vung staging area
-- git add . : dua tat ca cac file chua commit tu vung working directory den vung staing area
--git commit -m "message": lenh dua cac file tu vung staging len vung repository voi message la noi dung commit
+- git init: khởi tạo 1 repo gồm 3 vùng working directory, staging, repository được quản lý bởi git
+- git add <file_name>: đưa 1 file cụ thể từ vùng working directory vào vùng staging
+- git add . : đưa toàn bộ các file chưa commit từ vùng working directory sang vùng staing
+-git commit -m "message": tạo 1 commit mới chứa các file từ vùng staging sang repository với message là nội dung commit
 
 2.
 - working directory: file2, file3
-- staging: rỗng
+- staging: không có
 - repository: file1
