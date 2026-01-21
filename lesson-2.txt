@@ -1,0 +1,10 @@
+1.
+- git init: khoi tao 1 repo 
+- git add <file_name>: dua mot file cu the o vung working directory vao vung staging area
+- git add . : dua tat ca cac file chua commit tu vung working directory den vung staing area
+-git commit -m "message": lenh dua cac file tu vung staging len vung repository voi message la noi dung commit
+
+2.
+- working directory: file2, file3
+- staging: rỗng
+- repository: file1
