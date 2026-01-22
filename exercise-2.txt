@@ -1,9 +1,9 @@
 BÀI TẬP GIT 02
 1.
-- git commit --amend: mở nơi để sửa lại message của commit
-- git commit --amend -m"<message>": sửa nội dung message của commit trực tiếp
+- git commit --amend: sửa lại message của commit gần nhất và đi vào giao diện của vim
+- git commit --amend -m"<message>": sửa commit msg gần nhất, không đi vào giao diện vim, sửa message của commit trực tiếp
 - git restore --staged <file>: đưa lại file đang ở vùng staging về vùng working directory
-- git reset HEAD~1: đưa các file ở commit gần nhất về lại vùng working directory
+- git reset HEAD~1: đưa các file ở commit mới nhất về lại vùng working directory
 
 2.
 a. Tạo 3 file: file1, file2, file3
